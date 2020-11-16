@@ -1,16 +1,18 @@
-import React from 'react';
-import Routes from './routes/Routes';
-import './App.css';
-import './components/partials/styles/Nav.css'
-import './components/partials/styles/Footer.css'
-import './components/views/styles/Inicio.css'
 
+import Routes from "./routes/Routes";
+import "./App.css";
+import "./components/partials/styles/Nav.css";
+import "./components/partials/styles/Footer.css";
+import "./components/views/styles/Inicio.css";
 
 function App() {
+  const screenOrientation = window.screen.orientation;
+  console.log(screenOrientation);
+
   return (
-    <>
-    <Routes/>
-    </>
+    <div position="horizontal">
+      <Routes />
+    </div>
   );
 }
 

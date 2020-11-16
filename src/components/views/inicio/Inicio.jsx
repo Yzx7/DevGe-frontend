@@ -1,6 +1,6 @@
-import { IconButton, makeStyles } from "@material-ui/core";
+import { Button, IconButton, makeStyles } from "@material-ui/core";
 import {
-  Devices,
+  ArrowForwardIosRounded,
   DevicesRounded,
   SentimentSatisfiedAlt,
   TrendingUpRounded,
@@ -16,6 +16,18 @@ const useStyles = makeStyles(() => ({
     animationFillMode: "forwards",
     animationIterationCount: "infinite",
   },
+  inicioButton:{
+    margin: "20px 0",
+    borderRadius: "40px",
+    color: "#ffffff",
+    padding: "20px",
+    width: "300px",
+    animationName: "ChangeBackground",
+    animationDuration: "20s",
+    animationDirection: "alternate",
+    animationFillMode: "forwards",
+    animationIterationCount: "infinite",
+  }
 }));
 
 const Inicio = () => {
@@ -118,7 +130,7 @@ const Inicio = () => {
             </p>
           </div>
           <div className="inicioPag_section_card">
-          <IconButton
+            <IconButton
               color="primary"
               aria-label="add to shopping cart"
               className={classes.iconNosotros}
@@ -137,6 +149,56 @@ const Inicio = () => {
             </p>
           </div>
         </div>
+      </section>
+      <section className="inicioPag_section_info">
+        <article className="inicioPag_section_info_article">
+          <div className="inicioPag_section_info_article_relleno">
+            <h1>Tu propio sitio web</h1>
+            <p>
+              Mira más allá de las redes sociales y complementa tu negocio con un sitio web, según tus necesidades
+            </p>
+            <Button className={`inicioButton ${classes.inicioButton}`} endIcon={<ArrowForwardIosRounded/>}>
+              Quiero saber más
+            </Button>
+          </div>
+          <div className="inicioPag_section_info_article_board">
+            <img src="/images/websiteExample_products.png" alt="" />
+          </div>
+        </article>
+        <article className="inicioPag_section_info_article inicioPag_section_info_article_second">
+        <div className="inicioPag_section_info_article_board">
+            <img src="/images/websiteExample_products.png" alt="" />
+          </div>
+          <div className="inicioPag_section_info_article_relleno">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              quasi perspiciatis deleniti porro sunt a necessitatibus quis,
+              vitae quaerat quo, hic assumenda repudiandae expedita qui
+              obcaecati laborum ducimus rem laboriosam!
+            </p>
+          <Button className={classes.inicioButton} endIcon={<ArrowForwardIosRounded/>}>
+              Quiero saber más
+            </Button>
+          </div>
+        </article>
+        <article className="inicioPag_section_info_article">
+          <div className="inicioPag_section_info_article_relleno">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              quasi perspiciatis deleniti porro sunt a necessitatibus quis,
+              vitae quaerat quo, hic assumenda repudiandae expedita qui
+              obcaecati laborum ducimus rem laboriosam!
+            </p>
+            <Button className={classes.inicioButton} endIcon={<ArrowForwardIosRounded/>}>
+              Quiero saber más
+            </Button>
+          </div>
+          <div className="inicioPag_section_info_article_board">
+            <img src="/images/websiteExample_products.png" alt="" />
+          </div>
+        </article>
       </section>
     </div>
   );
