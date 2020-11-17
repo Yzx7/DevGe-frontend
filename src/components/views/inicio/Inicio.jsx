@@ -166,16 +166,19 @@ const Inicio = () => {
           </div>
         </article>
         <article className="inicioPag_section_info_article inicioPag_section_info_article_second">
-        <div className="inicioPag_section_info_article_board">
-            <img src="/images/websiteExample_products.png" alt="" />
+        <div className=" inicioPag_section_info_article_second_board">
+            <img src="/images/socialMedia/googleLogo.png" alt="googleLogo"/>
+            <img src="/images/socialMedia/facebookLogo.png" alt="facebookLogo"/>
+            <img src="/images/socialMedia/whatsAppLogo.png" alt="whatsAppLogo"/>
+            <img src="/images/socialMedia/instagramLogo.png" alt="instagramLogo"/>
+            <img src="/images/socialMedia/businessLogo.png" alt="businessLogo"/>
+            <img src="/images/socialMedia/mercadoLibreLogo.png" alt="mercadoLibreLogo"/>
+
           </div>
           <div className="inicioPag_section_info_article_relleno">
-            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <h1>Digitaliza tu negocio</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              quasi perspiciatis deleniti porro sunt a necessitatibus quis,
-              vitae quaerat quo, hic assumenda repudiandae expedita qui
-              obcaecati laborum ducimus rem laboriosam!
+              Aprovecha al máximo todas las posibilidades que tienes en internet y conecta con tus clientes
             </p>
           <Button className={classes.inicioButton} endIcon={<ArrowForwardIosRounded/>}>
               Quiero saber más

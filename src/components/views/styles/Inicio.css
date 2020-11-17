@@ -39,6 +39,7 @@
 .inicioPag_headerContainer_text {
   margin: 0 40px 0 0;
   width: 50%;
+  height: 30vh;
 }
 .inicioPag_headerContainer_text_h5 {
   font-size: 2vw;
@@ -117,7 +118,7 @@
   align-items: center;
   margin: 65px 0;
 }
-.inicioPag_section_info_article .inicioPag_section_info_article_relleno{
+.inicioPag_section_info_article .inicioPag_section_info_article_relleno {
   padding: 0 50px 0 0;
 }
 .inicioPag_section_info_article_second .inicioPag_section_info_article_relleno {
@@ -133,6 +134,26 @@
   width: 50%;
   /* min-height: 500px; */
   /* height: 300px; */
+}
+.inicioPag_section_info_article_second_board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 40%;
+}
+.inicioPag_section_info_article_second_board img {
+  overflow: hidden;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  display: flex;
+  align-items: center;
+  place-content: center;
+  width: 100%;
+  border-radius: 40px;
+  transition: cubic-bezier(0.42, 0, 0.12, 1.17) 1s;
+}
+.inicioPag_section_info_article_second_board img:hover {
+  transition: cubic-bezier(0.42, 0, 0.12, 1.17) 0.4s;
+  transform: scale(1.1);
 }
 .inicioPag_section_info_article_board img {
   width: 100%;
@@ -151,7 +172,6 @@
 .inicioPag_section_info_article_relleno p {
   text-align: justify;
   font-size: 18px;
-
 }
 
 @media (max-width: 1000px) {
@@ -169,6 +189,9 @@
   }
   .inicioPag_section_info_article_board {
     width: 100%;
+  }
+  .inicioPag_section_info_article_second_board{
+    width: 60%;
   }
 }
 @media (max-width: 900px) {
@@ -215,6 +238,9 @@
   .inicioPag_section_info_article_board img {
     width: 100%;
     height: auto;
+  }
+  .inicioPag_section_info_article_second_board{
+    width: 100%;
   }
   .inicioPag_section_info_article_board {
     min-height: auto;
@@ -263,6 +289,9 @@
   .inicioPag_section_info {
     padding: 20px;
   }
+  .inicioPag_section_info_article_second_board img{
+    border-radius: 25px;
+  }
 }
 
 /*max-Height*/
@@ -280,12 +309,29 @@
   .inicioPag_section_info_article {
     min-height: 600px;
   }
+  .inicioPag_header{
+min-height: 500px;
+  }
+  .inicioPag_headerBackground{
+    height: 400px !important;
+  }
   @media (max-width: 1000px) {
     .inicioPag_section_info_article {
       flex-direction: column;
     }
     .inicioPag_section_services {
       padding: 50px 20px;
+    }
+  }
+  @media (max-width: 800px) {
+    .inicioPag_headerContainer_text_h5{
+      font-size: 2.5vw;
+    }
+    .inicioPag_headerContainer_text_h2{
+      font-size: 5vw;
+    }
+    .inicioPag_headerContainer_img{
+      width: 85px;
     }
   }
 }
